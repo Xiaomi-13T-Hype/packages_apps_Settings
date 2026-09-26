@@ -63,6 +63,8 @@ class BatteryChartViewModel {
     private final String[] mBatteryLevelTexts;
 
     private int mSelectedIndex = SELECTED_INDEX_ALL;
+    private int mRangeStartIndex = SELECTED_INDEX_ALL;
+    private int mRangeEndIndex = SELECTED_INDEX_ALL;
     private int mHighlightSlotIndex = SELECTED_INDEX_INVALID;
 
     BatteryChartViewModel(
@@ -137,6 +139,40 @@ class BatteryChartViewModel {
 
     public void setSelectedIndex(int index) {
         mSelectedIndex = index;
+        mRangeStartIndex = index;
+        mRangeEndIndex = index;
+    }
+
+    public int getRangeStartIndex() {
+        return mRangeStartIndex;
+    }
+
+    public int getRangeEndIndex() {
+        return mRangeEndIndex;
+    }
+
+    public void setRange(int start, int end) {
+        mRangeStartIndex = Math.min(start, end);
+        mRangeEndIndex = Math.max(start, end);
+        mSelectedIndex = mRangeStartIndex;
+    }
+
+    public boolean isRangeSelected() {
+        return mRangeStartIndex != SELECTED_INDEX_ALL
+                && mRangeEndIndex != SELECTED_INDEX_ALL
+                && mRangeStartIndex != mRangeEndIndex;
+    }
+
+    public boolean isSlotCharging(int index) {
+        if (index < 0 || index >= size() - 1) {
+            return false;
+        }
+        final Integer cur = getLevel(index);
+        final Integer next = getLevel(index + 1);
+        return cur != null && next != null
+                && cur != com.android.settingslib.fuelgauge.BatteryStatus.BATTERY_LEVEL_UNKNOWN
+                && next != com.android.settingslib.fuelgauge.BatteryStatus.BATTERY_LEVEL_UNKNOWN
+                && next > cur;
     }
 
     public int getHighlightSlotIndex() {

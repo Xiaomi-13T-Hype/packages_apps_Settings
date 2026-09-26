@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024-2026 Lunaris AOSP
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Low Battery Dialogs -->
+    <string name="low_battery_dialogs_title">Диалоги низкого заряда</string>
+    <string name="low_battery_dialogs_summary">Показывать предупреждение о низком заряде и диалог выключения</string>
+    <string name="battery_saver_refresh_rate_title">Снижать частоту обновления</string>
+    <string name="battery_saver_refresh_rate_summary">Использовать частоту 60 Гц для экономии энергии при включенном режиме энергосбережения</string>
+    <string name="battery_saver_refresh_rate_disabled_summary">Включена экстремальная частота обновления</string>
+
+    <!-- HBM -->
+    <string name="auto_hbm_enabled_title">Автоматический режим повышенной яркости (HBM)</string>
+    <string name="auto_hbm_enabled_summary">Автоматически включать режим высокой яркости при ярком солнечном свете. Увеличивает расход батареи.</string>
+    <string name="auto_hbm_lux_on_title">Порог включения HBM</string>
+    <string name="auto_hbm_lux_on_summary">Уровень окружающего освещения, при котором включится режим высокой яркости</string>
+    <string name="auto_hbm_lux_off_title">Порог выключения HBM</string>
+    <string name="auto_hbm_lux_off_summary">Уровень окружающего освещения, ниже которого режим высокой яркости выключится</string>
+
+    <string name="show_back_gesture_background_title">Фон жеста «Назад»</string>
+    <string name="show_back_gesture_background_summary">Отображать фон при выполнении жеста «Назад»</string>
+
+    <!-- Battery Saver -->
+    <string name="adaptive_battery_switch_title">Использовать адаптивную батарею</string>
+    <string name="basic_battery_saver_title">Стандартный режим энергосбережения</string>
+    <string name="basic_battery_saver_summary">Ограничивает визуальные эффекты и фоновую активность. Включает тёмную тему, если она ещё не включена.</string>
+    <string name="battery_saver_reminder_category">Напоминания</string>
+    <string name="battery_saver_reminder_switch_title">Напоминания об энергосбережении</string>
+    <string name="battery_saver_reminder_switch_summary">Получать напоминания при низком заряде батареи</string>
+    <string name="battery_saver_schedule_category">Расписание</string>
+    <string name="battery_saver_schedule_switch_title">Включать при определенном уровне заряда</string>
+    <string name="battery_saver_schedule_switch_summary">Режим энергосбережения включится, когда заряд батареи снизится до заданного уровня</string>
+    <string name="battery_schedule_title">Расписание и напоминания</string>
+    <string name="battery_schedule_summary">Настройка времени включения режима энергосбережения</string>
+    <string name="extreme_battery_saver_title">Экстремальный режим энергосбережения</string>
+    <string name="extreme_battery_saver_summary">Включает все вышеперечисленные ограничения, а также приостанавливает работу второстепенных приложений и их уведомления.</string>
+    <string name="smart_battery_a11y_expand_label">Развернуть, Адаптивная батарея</string>
+    <string name="smart_battery_a11y_collapse_label">Свернуть, Адаптивная батарея</string>
+    <string name="smart_battery_title">Адаптивная батарея</string>
+    <string name="unified_battery_saver_page_intro">Экономьте заряд, чтобы телефон работал дольше между зарядками</string>
+
+    <!-- Ambient wake toggles -->
+    <string name="doze_gesture_ambient_title">Показывать экран заставки</string>
+    <string name="doze_gesture_ambient_summary">Показывать экран заставки (Ambient Display) вместо полного пробуждения экрана</string>
+    <string name="gesture_wake_ambient">Экран заставки (Ambient)</string>
+    <string name="gesture_wake">Полное пробуждение</string>
+
+    <!-- Wake gestures haptics -->
+    <string name="doze_gesture_vibrate_title">Тактильный отклик</string>
+    <string name="doze_gesture_vibrate_summary">Вибрировать при выполнении этого жеста</string>
+
+    <!-- Reality Display Engine -->
+    <string name="display_engine_category">Движок улучшения изображения</string>
+    <string name="display_engine_mode_title">Движок Reality Display</string>
+    <string name="x_reality_engine_mode_title">Движок X-Reality</string>
+    <string name="vivid_engine_mode_title">Яркое изображение (Vivid)</string>
+    <string name="triluminos_engine_mode_title">Дисплей Triluminos</string>
+    <string name="natural_engine_mode_title">Естественные цвета</string>
+    <string name="cinema_engine_mode_title">Кино (Cinema)</string>
+    <string name="reading_engine_mode_title">Режим чтения (Комфорт)</string>
+    <string name="display_engine_default">По умолчанию</string>
+    <string name="display_engine_mode_footer_text">Созданный по мотивам Sony Bravia/X-Reality, движок Display Engine предлагает режим Vivid для повышенной яркости и насыщенности, режим X-Reality для улучшенной детализации и точности цветопередачи, а также режим Triluminos для непревзойденной точности цветов.</string>
+
+    <!-- Long press navbar to search -->
+    <string name="navbar_long_press_gesture_title">Долгое нажатие для поиска</string>
+    <string name="navbar_long_press_gesture_summary">Нажмите и удерживайте кнопку «Домой» или полоску навигации для поиска по содержимому экрана</string>
+
+    <!-- Circle to search -->
+    <string name="search_all_entrypoints_enabled_title">Circle to Search</string>
+    <string name="search_all_entrypoints_enabled_summary">Использовать CTS вместо Google Объектива при долгом нажатии на полоску навигации</string>
+
+    <!-- Wifi Display settings. The title of a menu item to disable mirroring confimration [CHAR LIMIT=40] -->
+    <string name="mirroring_confirmation_disable_menu_item">Отключить подтверждение трансляции</string>
+
+    <!-- Per-app volume -->
+    <string name="app_volume">Громкость приложений</string>
+    <string name="app_volume_title">Раздельная громкость приложений</string>
+    <string name="app_volume_summary">Показывать кнопку громкости отдельных приложений в диалоге громкости</string>
+
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Двойное нажатие</string>
+    <string name="doze_double_tap_title">Двойное нажатие для проверки телефона</string>
+    <string name="doze_double_tap_summary">Показывать уведомления по двойному нажатию</string>
+
+    <!-- Multi Audio Focus -->
+    <string name="multi_audio_focus_title">Мульти-аудио фокус</string>
+    <string name="multi_audio_focus_summary">Разрешить одновременное воспроизведение звука нескольким приложениям</string>
+    
+    <!-- Override Mock Location restriction -->
+    <string name="override_mock_location_title">Обход ограничений фиктивных локаций</string>
+    <string name="override_mock_location_summary">При включении приложения не смогут обнаружить использование фиктивного местоположения</string>
+
+    <!-- WiFi Hotspot -->
+    <string name="wifi_hotspot_hidden_ssid_title">Скрытая сеть</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Имя точки доступа не будет отображаться в списке доступных сетей Wi-Fi.</string>
+    <string name="wifi_hotspot_client_manager_title">Подключенные устройства</string>
+    <string name="wifi_hotspot_client_manager_summary">Список устройств, подключенных к точке доступа, и управление ими</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Список устройств, подключенных к точке доступа</string>
+    <string name="wifi_hotspot_client_limit_title">Лимит подключенных устройств</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Заблокированные устройства</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Подключенные устройства</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Заблокировать устройство</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Устройство «<xliff:g id="device_name">%1$s</xliff:g>» будет отключено и добавлено в список заблокированных</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Разблокировать устройство</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Устройство «<xliff:g id="device_name">%1$s</xliff:g>» сможет подключаться к этой точке доступа</string>
+    <string name="wifi_hotspot_client_manager_footer_text">В данный момент нет подключенных устройств. Здесь будут отображаться подключенные и заблокированные устройства.</string>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="one">К этой точке доступа может подключиться до <xliff:g id="device_num">%1$d</xliff:g> устройства</item>
+        <item quantity="few">К этой точке доступа может подключиться до <xliff:g id="device_num">%1$d</xliff:g> устройств</item>
+        <item quantity="many">К этой точке доступа может подключиться до <xliff:g id="device_num">%1$d</xliff:g> устройств</item>
+        <item quantity="other">К этой точке доступа может подключиться до <xliff:g id="device_num">%1$d</xliff:g> устройств</item>
+    </plurals>
+
+    <!-- Hide apps - App info screen -->
+    <string name="hide">Скрыть</string>
+    <string name="hidden">Скрыто</string>
+    <string name="unhide">Показать</string>
+    <string name="hide_app">Скрыть приложение</string>
+    <string name="unhide_app">Показать приложение</string>
+    <string name="unhide_app_desc">Если показать это приложение, оно снова станет доступно системе Android и другим приложениям.</string>
+    <string name="hide_app_desc">Если скрыть это приложение, оно станет недоступно системе Android и другим приложениям, из-за чего они могут работать некорректно. Данные приложения будут сохранены.</string>
+    <!-- Label for showing hidden apps in list [CHAR LIMIT=40] -->
+    <string name="filter_hidden_apps">Скрытые приложения</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Очистить запрос</string>
+    <string name="language_picker_page">Страница выбора языка</string>
+    <string name="search_region">Поиск регионов</string>
+    <string name="search_region_page">Страница поиска региона</string>
+
+    <!-- Enforce DNS for VPN -->
+    <string name="vpn_enforce_dns_title">Отключать для VPN</string>
+    <string name="vpn_enforce_dns_summary">Отключать частный DNS при подключении к VPN\nВосстанавливается после отключения</string>
+
+    <!-- Model and Hardware -->
+    <string name="lunaris_version">Версия Lunaris-AOSP</string>
+    <string name="lunaris_device_title">Устройство</string>
+    <string name="lunaris_processor_code_title">Процессор</string>
+    <string name="lunaris_battery_type_title">Аккумулятор</string>
+    <string name="lunaris_screen_title">Экран</string>
+    <string name="lunaris_device_message">ICorn 10 Pro Max</string>
+    <string name="lunaris_processor_code_message">Chicken Nuggets® 52</string>
+    <string name="lunaris_battery_type_message">15000 мА·ч</string>
+    <string name="lunaris_screen_message">ЭЛТ-монитор 24 Гц</string>
+    <string name="lunaris_build_type">Тип сборки</string>
+
+    <!-- Data Usage Cycle -->
+    <string name="billing_cycle_type_title">Период учета мобильного трафика</string>
+    <string name="billing_cycle_type_monthly">Ежемесячно</string>
+    <string name="billing_cycle_type_weekly">Еженедельно</string>
+    <string name="billing_cycle_type_daily">Ежедневно</string>
+    <string name="billing_cycle_less_than_one_hour_left">Осталось менее 1 часа</string>
+    <string name="billing_cycle_hours_left">{count, plural,
+        =1      {Остался # час}
+        one     {Остался # час}
+        few     {Осталось # часа}
+        many    {Осталось # часов}
+        other   {Осталось # часов}
+        }</string>
+    <string name="cycle_type_weekly_title">День сброса периода учета</string>
+    <string name="cycle_type_weekly_sub">День недели:\n1 = Понедельник</string>
+    <string name="cycle_type_daily_title">Час сброса периода учета</string>
+    <string name="cycle_type_daily_sub">Час каждого дня:</string>
+
+    <!-- Smart 5G -->
+    <string name="smart_5g_title">Умный 5G</string>
+    <string name="smart_5g_summary">Автоматически переключаться между 5G и 4G для снижения расхода батареи</string>
+
+    <!-- Sleep Mode -->
+    <string name="sleep_mode_title">Режим сна</string>
+    <string name="sleep_mode_summary_on">Вкл. / <xliff:g name="auto_mode_summary" example="Never turn off automatically">%1$s</xliff:g></string>
+    <string name="sleep_mode_summary_off">Выкл. / <xliff:g name="auto_mode_summary" example="Never turn on automatically">%1$s</xliff:g></string>
+    <string name="sleep_mode_ringer_title">Режим звонка</string>
+    <string name="sleep_mode_ringer_off_title">Не изменять</string>
+    <string name="sleep_mode_ringer_vibrate_title">Вибрация</string>
+    <string name="sleep_mode_ringer_dnd_title">Не беспокоить</string>
+    <string name="sleep_mode_ringer_silent_title">Без звука</string>
+    <string name="sleep_mode_schedule_sunset">Закат</string>
+    <string name="sleep_mode_schedule_sunrise">Рассвет</string>
+    <string name="sleep_mode_schedule_mixed_sunset">Включается от заката до заданного времени</string>
+    <string name="sleep_mode_schedule_mixed_sunrise">Включается от заданного времени до рассвета</string>
+    <string name="sleep_mode_toggles_title">Действия</string>
+    <string name="sleep_mode_wifi_toggle_title">Выключать Wi-Fi</string>
+    <string name="sleep_mode_wifi_toggle_summary">Отключать Wi-Fi при включении режима сна</string>
+    <string name="sleep_mode_bluetooth_toggle_title">Выключать Bluetooth</string>
+    <string name="sleep_mode_bluetooth_toggle_summary">Отключать Bluetooth при включении режима сна</string>
+    <string name="sleep_mode_cellular_toggle_title">Выключать мобильный интернет</string>
+    <string name="sleep_mode_cellular_toggle_summary">Отключать мобильную передачу данных при включении режима сна</string>
+    <string name="sleep_mode_location_toggle_title">Выключать геолокацию</string>
+    <string name="sleep_mode_location_toggle_summary">Отключать геолокацию при включении режима сна</string>
+    <string name="sleep_mode_sensors_toggle_title">Выключать датчики</string>
+    <string name="sleep_mode_sensors_toggle_summary">Отключать датчики при включении режима сна</string>
+    <string name="sleep_mode_display_text">Режим сна позволяет отключить определенные службы для экономии заряда батареи и перевести телефон в тихий режим, пока вы спите.</string>
+    <!-- Display settings screen, activation button action for manual mode. [CHAR LIMIT=40] -->
+    <string name="night_display_activation_on_manual">Включить сейчас</string>
+    <!-- Display settings screen, deactivation button action for manual mode. [CHAR LIMIT=40] -->
+    <string name="night_display_activation_off_manual">Выключить сейчас</string>
+    <!-- Display settings screen, activation button action for sunset-to-sunrise schedule [CHAR LIMIT=40] -->
+    <string name="night_display_activation_on_twilight">Включить до рассвета</string>
+    <!-- Display settings screen, deactivation button action for sunset-to-sunrise schedule [CHAR LIMIT=40] -->
+    <string name="night_display_activation_off_twilight">Выключить до заката</string>
+    <!-- Display settings screen, activation button action for custom schedule [CHAR LIMIT=40] -->
+    <string name="night_display_activation_on_custom">Включить до <xliff:g name="time" example="6 AM">%1$s</xliff:g></string>
+    <!-- Display settings screen, deactivation button action for custom schedule [CHAR LIMIT=40] -->
+    <string name="night_display_activation_off_custom">Выключить до <xliff:g name="time" example="10 PM">%1$s</xliff:g></string>
+
+    <string name="double_tap_power_torch_action_title">Фонарик</string>
+
+    <string name="gesture_navbar_auto_hide_title">Автоскрытие подсказки навигации</string>
+    <string name="gesture_navbar_auto_hide_summary">Автоматически скрывать полоску жестов навигации после короткого периода бездействия</string>
+
+    <!-- Per-app configs -->
+    <string name="per_app_config_empty_text">Нет установленных приложений, поддерживающих текущие настройки</string>
+
+    <!-- Per-app refresh rate -->
+    <string name="per_app_refresh_rate_title">Частота обновления для приложений</string>
+    <string name="per_app_refresh_rate_summary">Индивидуальная настройка частоты обновления экрана для каждого приложения</string>
+    <string name="per_app_refresh_rate_default">Как в системе</string>
+
+    <!-- Screen refresh rate -->
+    <string name="screen_refresh_rate_title">Частота обновления экрана</string>
+    <string name="min_refresh_rate_title">Минимальная частота обновления</string>
+    <string name="max_refresh_rate_title">Максимальная частота обновления</string>
+
+    <!-- Extreme refresh rate -->
+    <string name="extreme_refresh_rate_title">Экстремальная частота обновления</string>
+    <string name="extreme_refresh_rate_summary">Принудительно максимальная частота обновления для всех приложений</string>
+    <string name="extreme_refresh_rate_warning">Система всегда будет выбирать максимальную частоту обновления, игнорируя настройки пользователя и предпочтения приложений. Некоторые приложения могут работать нестабильно.</string>
+
+    <!-- Confirm dialog -->
+    <string name="confirm_before_enable_title">Включить этот параметр?</string>
+
+    <!-- Per-app GPU composition -->
+    <string name="use_gpu_for_screen_composition_title">Рендеринг экрана через GPU</string>
+    <string name="use_gpu_for_screen_composition_summary">Выберите приложения, при работе которых должно отключаться аппаратное наложение (HW overlays)</string>
+
+    <!-- Expanded Dark theme exceptions -->
+    <string name="dark_theme_per_app_title">Исключения тёмной темы</string>
+    <string name="dark_theme_per_app_summary">Выберите приложения, которые сохранят собственный внешний вид вместо принудительной тёмной темы</string>
+
+    <!-- App list fragment -->
+    <string name="app_list_search">Поиск</string>
+    <string name="app_list_search_apps">Поиск приложений</string>
+    <string name="app_list_loading">Загрузка приложений\u2026</string>
+
+    <!-- Display settings screen, color balance category title [CHAR LIMIT=30] -->
+    <string name="color_mode_advanced_category">Расширенные настройки</string>
+    <!-- Display settings screen, red color balance setting slider [CHAR LIMIT=NONE] -->
+    <string name="color_mode_balance_red">Насыщенность красного</string>
+    <!-- Display settings screen, green color balance setting slider [CHAR LIMIT=NONE] -->
+    <string name="color_mode_balance_green">Насыщенность зелёного</string>
+    <!-- Display settings screen, blue color balance setting slider [CHAR LIMIT=NONE] -->
+    <string name="color_mode_balance_blue">Насыщенность синего</string>
+    <string name="keywords_color_balance">цвет, баланс цвета, коррекция цвета, красный, зелёный, синий, LiveDisplay</string>
+
+    <!-- Color temperature -->
+    <string name="color_temperature_title">Цветовая температура</string>
+    <string name="color_temperature_start_label">Тёплая</string>
+    <string name="color_temperature_end_label">Холодная</string>
+    <string name="keywords_color_temperature">цвет, цветовая температура, тёплый, холодный, LiveDisplay</string>
+    <string name="color_hue_title">Цветовой тон</string>
+    <string name="color_contrast_title">Контрастность</string>
+    <string name="color_picture_brightness_title">Яркость изображения</string>
+
+    <!-- Color saturation -->
+    <string name="color_saturation_title">Насыщенность</string>
+    <string name="keywords_color_saturation">цвет, цветовая температура, тёплый, холодный, LiveDisplay</string>
+
+    <!-- hotspot data limit -->
+    <string name="one_time_data_limit_title">Разовый лимит трафика</string>
+    <string name="one_time_data_limit_size">Размер</string>
+    <string name="one_time_data_limit_when_exceeded">При превышении</string>
+    <string name="one_time_data_limit_turn_off_notify">Отключить и уведомить</string>
+    <string name="one_time_data_limit_notify_only">Только уведомить</string>
+</resources>

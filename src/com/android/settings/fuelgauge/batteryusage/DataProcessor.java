@@ -1604,7 +1604,7 @@ public final class DataProcessor {
     }
 
     @Nullable
-    private static BatteryDiffData getAccumulatedUsageDiffData(
+    static BatteryDiffData getAccumulatedUsageDiffData(
             final Context context, final Collection<BatteryDiffData> batteryDiffDataList) {
         final Map<String, BatteryDiffEntry> diffEntryMap = new ArrayMap<>();
         final List<BatteryDiffEntry> appEntries = new ArrayList<>();
@@ -1623,7 +1623,7 @@ public final class DataProcessor {
                 startTimestamp = batteryDiffData.getStartTimestamp();
                 startBatteryLevel = batteryDiffData.getStartBatteryLevel();
             }
-            if (endTimestamp > batteryDiffData.getEndTimestamp()) {
+            if (endTimestamp < batteryDiffData.getEndTimestamp()) {
                 endTimestamp = batteryDiffData.getEndTimestamp();
                 endBatteryLevel = batteryDiffData.getEndBatteryLevel();
             }

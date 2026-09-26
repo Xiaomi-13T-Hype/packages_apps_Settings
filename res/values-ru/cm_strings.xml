@@ -105,4 +105,15 @@
     <string name="battery_design_capacity_summary">%1$d mAh</string>
     <string name="battery_maximum_capacity">Максимальная емкость</string>
     <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
+    <string name="private_dns_mode_cloudflare">Cloudflare DNS</string>
+    <string name="private_dns_hostname_cloudflare">one.one.one.one</string>
+    <string name="lock_pattern_size_3">3 \u00d7 3</string>
+    <string name="lock_pattern_size_4">4 \u00d7 4</string>
+    <string name="lock_pattern_size_5">5 \u00d7 5</string>
+    <string name="lock_pattern_size_6">6 \u00d7 6</string>
+    <string name="battery_technology_not_available">@string/battery_cycle_count_not_available</string>
+    <string name="battery_temperature_not_available">@string/battery_cycle_count_not_available</string>
+    <string name="battery_voltage_not_available">@string/battery_cycle_count_not_available</string>
+    <string name="battery_design_capacity_not_available">@string/battery_cycle_count_not_available</string>
+    <string name="battery_maximum_capacity_not_available">@string/battery_cycle_count_not_available</string>
 </resources>

@@ -271,7 +271,29 @@ public class PowerUsageAdvanced extends PowerUsageBase {
         final String accessibilitySlotInformation =
                 mBatteryChartPreferenceController.getSlotInformation(
                         /* isAccessibilityText= */ true);
-        final BatteryDiffData slotUsageData = mBatteryUsageMap.get(dailyIndex).get(hourlyIndex);
+        final BatteryDiffData slotUsageData;
+        if (mBatteryChartPreferenceController.isHourlyRangeSelected()) {
+            final int startIndex = mBatteryChartPreferenceController.getHourlyChartStartIndex();
+            final int endIndex = mBatteryChartPreferenceController.getHourlyChartEndIndex();
+            final Map<Integer, BatteryDiffData> hourlyMap = mBatteryUsageMap.get(dailyIndex);
+            final List<BatteryDiffData> rangeList = new ArrayList<>();
+            if (hourlyMap != null) {
+                for (int i = startIndex; i <= endIndex; i++) {
+                    final BatteryDiffData diff = hourlyMap.get(i);
+                    if (diff != null) {
+                        rangeList.add(diff);
+                    }
+                }
+            }
+            slotUsageData = DataProcessor.getAccumulatedUsageDiffData(getContext(), rangeList);
+            if (slotUsageData != null) {
+                slotUsageData.getAppDiffEntryList().forEach(BatteryDiffEntry::loadLabelAndIcon);
+                slotUsageData.getSystemDiffEntryList().forEach(BatteryDiffEntry::loadLabelAndIcon);
+            }
+        } else {
+            final Map<Integer, BatteryDiffData> hourlyMap = mBatteryUsageMap.get(dailyIndex);
+            slotUsageData = hourlyMap != null ? hourlyMap.get(hourlyIndex) : null;
+        }
         mScreenOnTimeController.handleScreenOnTimeUpdated(
                 slotUsageData != null ? slotUsageData.getScreenOnTime() : 0L,
                 slotInformation,

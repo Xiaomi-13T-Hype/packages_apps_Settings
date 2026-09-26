@@ -5999,4 +5999,54 @@
     <string name="safety_center_account_security_search_terms" msgid="3950829613581775913"></string>
     <string name="safety_center_device_finder_search_terms" msgid="452013643838126923"></string>
     <string name="safety_center_system_component_update_search_terms" msgid="3110390275537109543"></string>
+    <string name="wifi_display_certification_heading">Сертификация</string>
+    <string name="wifi_display_session_info">Сведения о сеансе</string>
+    <string name="wifi_display_listen_mode">Режим прослушивания</string>
+    <string name="wifi_display_autonomous_go">Автономный GO</string>
+    <string name="wifi_display_pause">Пауза</string>
+    <string name="wifi_display_resume">Возобновить</string>
+    <string name="wifi_display_wps_config">Конфигурация WPS</string>
+    <string name="wifi_display_listen_channel">Канал прослушивания</string>
+    <string name="wifi_display_operating_channel">Рабочий канал</string>
+    <string name="testing_wifi_info">Сведения о Wi-Fi</string>
+    <string name="wifi_api_test">Wi-Fi API</string>
+    <string name="wifi_status_test">Статус Wi-Fi</string>
+    <string name="wifi_update">Обновить статистику</string>
+    <string name="wifi_state_label">Состояние Wi-Fi:</string>
+    <string name="network_state_label">Состояние сети:</string>
+    <string name="supplicant_state_label">Состояние саппликанта:</string>
+    <string name="rssi_label">RSSI:</string>
+    <string name="bssid_label">BSSID:</string>
+    <string name="ssid_label">SSID:</string>
+    <string name="hidden_ssid_label">Скрытый SSID:</string>
+    <string name="ipaddr_label">IP-адрес:</string>
+    <string name="macaddr_label">MAC-адрес:</string>
+    <string name="networkid_label">ID сети:</string>
+    <string name="tx_link_speed_label">Скорость передачи:</string>
+    <string name="rx_link_speed_label">Скорость приёма:</string>
+    <string name="scan_list_label">Результаты сканирования:</string>
+    <string name="wifi_state_disabling">Отключение</string>
+    <string name="wifi_state_disabled">Отключено</string>
+    <string name="wifi_state_enabling">Включение</string>
+    <string name="wifi_state_enabled">Включено</string>
+    <string name="wifi_state_unknown">Неизвестно</string>
+    <string name="wifi_config_info">Конфигурация Wi-Fi</string>
+    <string name="config_list_label">Настроенные сети</string>
+    <string name="trackpad_gestures_disabled_footer_text">Некоторые настройки недоступны, так как жесты тачпада отключены. Вы можете включить их в меню Спец. возможности > Указатель и тачпад > Использовать жесты тачпада</string>
+    <string name="modifier_keys_caps_lock">Caps lock</string>
+    <string name="modifier_keys_ctrl">Ctrl</string>
+    <string name="modifier_keys_meta">Клавиша действия</string>
+    <string name="modifier_keys_alt">Alt</string>
+    <string name="testing_sim_toolkit">SIM Toolkit</string>
+    <string name="time_zone_auto_stub">Выберите часовой пояс</string>
+    <string name="ringtone1_title">Мелодия звонка — SIM 1</string>
+    <string name="ringtone2_title">Мелодия звонка — SIM 2</string>
+    <string name="change_theme_reboot">Для смены темы требуется перезагрузка.</string>
+    <string name="network_global">Глобальный</string>
+    <string name="dsu_loader_title">Загрузчик DSU</string>
+    <string name="dsu_loader_description">Загрузить образ динамического обновления системы</string>
+    <string name="dsu_loader_loading">Загрузка\u2026</string>
+    <string name="dsu_is_running">DSU выполняется</string>
+    <string name="software_cursor_trigger_hints_enabled_title">Подсказки зон распознавания жестов</string>
+    <string name="software_cursor_trigger_keyboard_shift_enabled_title">Сдвигать зону жестов выше клавиатуры</string>
 </resources>
