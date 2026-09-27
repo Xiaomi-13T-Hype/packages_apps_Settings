@@ -644,7 +644,7 @@ public class DeviceAdminAdd extends CollapsingToolbarBaseActivity {
         mAdminName.setText(mDeviceAdmin.loadLabel(getPackageManager()));
         try {
             mAdminDescription.setText(
-                    mDeviceAdmin.loadDescriptionSafe(getPackageManager()));
+                    mDeviceAdmin.loadDescription(getPackageManager()));
             mAdminDescription.setVisibility(View.VISIBLE);
         } catch (Resources.NotFoundException e) {
             mAdminDescription.setVisibility(View.GONE);

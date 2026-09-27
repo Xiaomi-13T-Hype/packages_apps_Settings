@@ -19,8 +19,6 @@ package com.android.settings.applications.specialaccess.deviceadmin;
 import static com.google.common.truth.Truth.assertThat;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.app.admin.DeviceAdminInfo;
@@ -62,9 +60,7 @@ public class DeviceAdminListItemTest {
         when(mDeviceAdminInfo.getActivityInfo()).thenReturn(new ActivityInfo());
         mDeviceAdminInfo.getActivityInfo().applicationInfo = new ApplicationInfo();
         when(mDeviceAdminInfo.loadLabel(any(PackageManager.class))).thenReturn(label);
-        verify(mDeviceAdminInfo, never()).loadDescription(any(PackageManager.class));
-        when(mDeviceAdminInfo.loadDescriptionSafe(any(PackageManager.class)))
-                .thenReturn(description);
+        when(mDeviceAdminInfo.loadDescription(any(PackageManager.class))).thenReturn(description);
         when(mDeviceAdminInfo.loadIcon(any(PackageManager.class)))
                 .thenReturn(new ColorDrawable(Color.BLUE));
         when(mDeviceAdminInfo.getComponent()).thenReturn(cn);
