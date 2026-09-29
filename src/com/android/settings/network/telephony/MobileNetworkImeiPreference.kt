@@ -107,7 +107,7 @@ class MobileNetworkImeiPreference(private val context: Context, private val subI
                 else R.string.status_imei
             getString(titleId)
         } catch (exception: Exception) {
-            Log.e(TAG, "PrimaryImei not available.", exception)
+            Log.d(TAG, "PrimaryImei not available: ${exception.message}")
             getString(R.string.status_imei)
         }
 
