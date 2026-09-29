@@ -152,10 +152,10 @@
     <string name="lunaris_processor_code_title">Процессор</string>
     <string name="lunaris_battery_type_title">Аккумулятор</string>
     <string name="lunaris_screen_title">Экран</string>
-    <string name="lunaris_device_message">ICorn 10 Pro Max</string>
-    <string name="lunaris_processor_code_message">Chicken Nuggets® 52</string>
-    <string name="lunaris_battery_type_message">15000 мА·ч</string>
-    <string name="lunaris_screen_message">ЭЛТ-монитор 24 Гц</string>
+    <string name="lunaris_device_message">POCO X3 Pro</string>
+    <string name="lunaris_processor_code_message">Qualcomm® Snapdragon™ 860</string>
+    <string name="lunaris_battery_type_message">5160 мА·ч</string>
+    <string name="lunaris_screen_message">IPS LCD 120 Гц</string>
     <string name="lunaris_build_type">Тип сборки</string>
 
     <!-- Data Usage Cycle -->
